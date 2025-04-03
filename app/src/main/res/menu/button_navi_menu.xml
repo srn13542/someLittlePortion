@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/myPageViewBtn"
+        android:enabled="true"
+        android:title="@string/myPage"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/inventoryViewBtn"
+        android:enabled="true"
+        android:title="@string/inventory"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/farmingViewBtn"
+        android:enabled="true"
+        android:title="@string/farming"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/storeViewBtn"
+        android:enabled="true"
+        android:title="@string/store"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/settingViewBtn"
+        android:enabled="true"
+        android:title="@string/setting"
+        app:showAsAction="always"/>
+
+</menu>

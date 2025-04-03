@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">someLittlePortion</string>
+    <string name="home">홈</string>
+    <string name="inventory">인벤토리</string>
+    <string name="farming">탐색가기</string>
+    <string name="myPage">마이페이지</string>
+    <string name="store">상점</string>
+    <string name="setting">설정</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
