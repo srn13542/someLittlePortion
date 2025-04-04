@@ -8,4 +8,6 @@
     <string name="setting">설정</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profilePicButton">프로필 사진</string>
+    <string name="toolDescription">"파밍에 필요한 무기를 고를 수 있습니다. "</string>
 </resources>
