@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/afd9b7a6-82ef-41fd-9e52-30c64fc57fba)#FarmingSpot <br />
+#FarmingSpot <br />
 
 <div align="center">
   <h3>판타지 세계관 속 포션 제작을 위한, 현실의 수집 방법과는 거리가 있는 환상의 재료 수집 게임</h3>
