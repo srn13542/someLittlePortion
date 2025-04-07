@@ -1,6 +1,7 @@
 ## FarmingSpot <br />
 
 <div align="center">
+  <br />
   <h3>판타지 세계관 속 포션 제작을 위한, 현실의 수집 방법과는 거리가 있는 환상의 재료 수집 게임</h3>
 </div><br /><br /><br />
 
