@@ -63,6 +63,17 @@
   - userActivity(Fragment)에서는 획득한 아이템을 확인할 수 있다. 각 아이템 클릭 시 아이템의 설명을 담은 모달이 출력된다.
   - 각 요소와 상호작용하여 아이템을 획득하면, 그것을 Store Activity에서 판매하거나 새 아이템을 구매한다.
 
+  - 게임 레이아웃의 레퍼런스는 포켓몬 슬립에서 따왔다
+
+| 화면 예시 | 설명 |
+| -------- | ----- |
+|![image](https://github.com/user-attachments/assets/ef61b974-e80a-421b-82d1-1f8363fd3f72)| '포켓몬 슬립'의 기본 화면, '포켓몬'들이 화면의, 제한된 화면 내의 랜덤한 곳에 생성된다.|
+|![image](https://github.com/user-attachments/assets/67b1f92e-086d-4ae8-bd4f-b12e430a0b89)| 시간, 타이밍, 이벤트 여부에 따라 배경이나 브금이 바뀌는 모습도 보인다.|
+|![image](https://github.com/user-attachments/assets/b825f458-f275-4df0-85b8-f09353a3aa3e)| 특정 버튼 클릭 시 소유한 포켓몬을 볼 수 있다. User Activity에서 아이템을 보일 때 이 화면을 레퍼런스로 삼을 예정이다.|
+
+
+
+
 <br /><br /><br />
 ## 🎇개발 일정🎇 <br /><br />
 
