@@ -119,7 +119,12 @@
 |화면 |
 |----|
 |![image](https://github.com/user-attachments/assets/0f15cf38-784b-4c1a-8b32-d76d05113ba9)|
-|![image](https://github.com/user-attachments/assets/42ee428b-496a-4b1e-9d8b-f141b66afce3)|
+|![image](https://github.com/user-attachments/assets/1311259a-cb6c-439d-b356-cfde58f68c89)|
 |![image](https://github.com/user-attachments/assets/71e69e3b-1e0d-436a-aef8-45c42087dad6)|
+
+|클래스|
+|-----|
+|![image](https://github.com/user-attachments/assets/71f9433a-bb89-4c09-b1ff-b99a59af8652)|
+|![image](https://github.com/user-attachments/assets/5f92eecf-f7c0-4477-99e3-09805cf80038) |
 
 
