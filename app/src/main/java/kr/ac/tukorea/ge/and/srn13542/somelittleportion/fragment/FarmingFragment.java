@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import kr.ac.tukorea.ge.and.srn13542.somelittleportion.databinding.FragmentFarmingBinding;
+import kr.ac.tukorea.ge.and.srn13542.somelittleportion.dialog.ToolDialogFragment;
 
 
 public class FarmingFragment extends Fragment {
@@ -37,7 +38,18 @@ public class FarmingFragment extends Fragment {
         binding.ToolMenuButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                ToolDialogFragment dialog = new ToolDialogFragment();
 
+                dialog.setOnToolSelectedListener(new ToolDialogFragment.OnToolSelectedListener() {
+                    @Override
+                    public void onToolSelected(String toolName) {
+                        // 여기서 FarmingFragment 내부 로직 실행 가능
+                        Log.d("FarmingFragment", "선택된 도구: " + toolName);
+                        // 예: 도구 이름 표시, 효과 적용 등
+                    }
+                });
+
+                dialog.show(getParentFragmentManager(), "ToolDialog");
             }
         });
 
