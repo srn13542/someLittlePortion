@@ -98,6 +98,6 @@
 
   | 당초 계획 | 진척 |
   | --------  | ---- |
-  | ![쿨그레이 깔끔한 사업계획서 프레젠테이션](https://github.com/user-attachments/assets/b355ded6-11fa-4db4-a604-37b6a2e560c3) | [쿨그레이 깔끔한 사업계획서 프레젠테이션.pdf](https://github.com/user-attachments/files/20160520/default.pdf) |
-  | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (1)](https://github.com/user-attachments/assets/9b37a898-a5f4-4f8d-9d10-daa7f62898ad) |  [쿨그레이 깔끔한 사업계획서 프레젠테이션 (1).pdf](https://github.com/user-attachments/files/20160540/1.pdf) | 
+  | ![쿨그레이 깔끔한 사업계획서 프레젠테이션](https://github.com/user-attachments/assets/b355ded6-11fa-4db4-a604-37b6a2e560c3) | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (2)](https://github.com/user-attachments/assets/4fc6a0e7-5b9c-4946-8b3e-f4d82d1e551d) |
+  | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (1)](https://github.com/user-attachments/assets/9b37a898-a5f4-4f8d-9d10-daa7f62898ad) |  ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (3)](https://github.com/user-attachments/assets/103f3635-eab3-4a04-b6f4-05477b15e7d6) | 
 
