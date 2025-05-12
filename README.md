@@ -90,3 +90,13 @@
   - 6주차에는 골드를 이용하여 아이템을 사고 파는 기능 구현에 신경쓸 예정
   - 7주차에, 개발 실력 부족으로 미처 개발하지 못한 것을 개발하고 테스트하는 시간 가질 예정
 
+
+
+<div align="center">
+  05월 12일 기준 진척 보고
+  | 당초 계획 | 진척 |
+  | --------  | ---- |
+  | ![쿨그레이 깔끔한 사업계획서 프레젠테이션](https://github.com/user-attachments/assets/b355ded6-11fa-4db4-a604-37b6a2e560c3) | [쿨그레이 깔끔한 사업계획서 프레젠테이션.pdf](https://github.com/user-attachments/files/20160520/default.pdf) |
+  | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (1)](https://github.com/user-attachments/assets/9b37a898-a5f4-4f8d-9d10-daa7f62898ad) |  [쿨그레이 깔끔한 사업계획서 프레젠테이션 (1).pdf](https://github.com/user-attachments/files/20160540/1.pdf) | 
+
+</div>
