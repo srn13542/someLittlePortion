@@ -96,8 +96,30 @@
   05월 12일 기준 진척 보고
 </div> <br /><br />
 
+##진척 보고
+
   | 당초 계획 | 진척 |
   | --------  | ---- |
   | ![쿨그레이 깔끔한 사업계획서 프레젠테이션](https://github.com/user-attachments/assets/b355ded6-11fa-4db4-a604-37b6a2e560c3) | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (2)](https://github.com/user-attachments/assets/4fc6a0e7-5b9c-4946-8b3e-f4d82d1e551d) |
   | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (1)](https://github.com/user-attachments/assets/9b37a898-a5f4-4f8d-9d10-daa7f62898ad) |  ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (3)](https://github.com/user-attachments/assets/103f3635-eab3-4a04-b6f4-05477b15e7d6) | 
+
+## ~~방탕한~~ 그래프
+![image](https://github.com/user-attachments/assets/a9abcf8e-6038-49ea-a25e-db2c42940f4b)
+>4월 첫째주 이후 예상 개발 진척을 따르지 못한 모습을 보임
+  >> 이유는 다음과 같음::
+>  > 졸업 발표와 시험 공부를 한다고 본 과목을 게을리함
+>  > 리소스 제작과 게임 내 조건 구성에 시간을 쏟음 (둘 모두 commit으로 나타나지 않는 것임)
+![image](https://github.com/user-attachments/assets/089136f7-8151-4cc9-a20d-d40a5ee5e789)
+
+## 진행 상황 및 향후 방향
+![쿨그레이 깔끔한 사업계획서 프레젠테이션 (4)](https://github.com/user-attachments/assets/e7da6a50-edc3-4064-8691-8cf0766b4d73)
+
+##현재 구현 요소
+
+|화면 |
+|----|
+|![image](https://github.com/user-attachments/assets/0f15cf38-784b-4c1a-8b32-d76d05113ba9)|
+|![image](https://github.com/user-attachments/assets/42ee428b-496a-4b1e-9d8b-f141b66afce3)|
+|![image](https://github.com/user-attachments/assets/71e69e3b-1e0d-436a-aef8-45c42087dad6)|
+
 
