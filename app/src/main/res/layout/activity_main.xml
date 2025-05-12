@@ -25,7 +25,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/button_navi_menu"
         app:labelVisibilityMode="labeled"
-        app:itemBackground="@color/white"
+        app:itemBackground="@drawable/bottom_navigation_bar"
+        android:background="@drawable/bottom_navigation_bar"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
         android:layout_alignParentBottom = "true"/>

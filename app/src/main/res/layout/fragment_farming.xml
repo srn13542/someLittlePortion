@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.FarmingFragment"
-    android:background="@drawable/background_night">
+    android:background="@drawable/bg3"
+    android:id = "@+id/farming_background">
 
             <!-- 최상단 바 -->
     <LinearLayout
@@ -52,7 +53,7 @@
         android:layout_below ="@+id/upStatusBar"
         android:layout_marginTop="5dp"
         android:layout_marginStart="15dp"
-        android:id="@+id/menuThingButton"
+        android:id="@+id/ToolMenuButton"
         android:contentDescription="@string/toolDescription"
         android:background="@drawable/list"
         android:backgroundTint="@color/menuYellow"

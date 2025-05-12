@@ -14,7 +14,7 @@
         android:enabled="true"
         android:title="@string/inventory"
         android:icon = "@drawable/menu2_inventory"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
 
     <item
@@ -22,7 +22,7 @@
         android:enabled="true"
         android:title="@string/farming"
         android:icon= "@drawable/menu3_farm"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
 
     <item
@@ -30,7 +30,7 @@
         android:enabled="true"
         android:title="@string/store"
         android:icon = "@drawable/menu4_store"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/settingViewBtn"
