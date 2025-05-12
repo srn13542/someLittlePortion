@@ -7,68 +7,19 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/relativeLayoutMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="15dp" >
-        <!-- 최상단 바 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/upStatusBar" >
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/profilePicButton"
-                android:layout_marginEnd="10dp"
-                android:contentDescription="@string/profilePicButton" />
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
-                <TableRow>
-                    <TextView
-                        android:id = "@+id/coinTextView"
-                        style="@style/CenteredTextViewStyle" />
-                   <TextView
-                       android:id = "@+id/jewelTextView"
-                       style="@style/CenteredTextViewStyle" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:id="@+id/imsiEmptyThing"
-                        style="@style/CenteredTextViewStyle"
-                        android:visibility="invisible" />
-                    <TextView
-                        android:id="@+id/plusSomeTextView"
-                        style="@style/CenteredTextViewStyle" />
-                </TableRow>
-            </TableLayout>
-        </LinearLayout>
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below ="@+id/upStatusBar"
-            android:layout_marginTop="10dp"
-            android:layout_margin="5dp"
-            android:id="@+id/menuThingButton"
-            android:contentDescription="@string/toolDescription"
-            android:background="@drawable/list"
-
-            />
+        app:layout_constraintTop_toTopOf="parent">
     </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +27,7 @@
         app:labelVisibilityMode="labeled"
         app:itemBackground="@color/white"
         app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black" />
+        app:itemTextColor="@color/black"
+        android:layout_alignParentBottom = "true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

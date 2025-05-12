@@ -1,7 +1,8 @@
 package kr.ac.tukorea.ge.and.srn13542.somelittleportion;
 
 import android.os.Bundle;
-import android.util.SparseArray;
+import android.util.Log;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -14,10 +15,16 @@ import kr.ac.tukorea.ge.and.srn13542.somelittleportion.fragment.SettingFragment;
 import kr.ac.tukorea.ge.and.srn13542.somelittleportion.fragment.StoreFragment;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
+    private ActivityMainBinding binding;
     private final FragmentManager fragmentManager = getSupportFragmentManager();
+    private Fragment activeFragment;
 
-    private SparseArray<Fragment> fragmentSparseArray;
+    // Fragment 재사용을 위한 멤버 변수
+    private final Fragment myPageFragment = new MyPageFragment();
+    private final Fragment inventoryFragment = new InventoryFragment();
+    private final Fragment farmingFragment = new FarmingFragment();
+    private final Fragment storeFragment = new StoreFragment();
+    private final Fragment settingFragment = new SettingFragment();
 
 
     @Override
@@ -26,28 +33,50 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Fragment 메뉴 ID를 맵핑
-        fragmentSparseArray = new SparseArray<>();
-        fragmentSparseArray.put(R.id.myPageViewBtn, new MyPageFragment());
-        fragmentSparseArray.put(R.id.inventoryViewBtn, new InventoryFragment());
-        fragmentSparseArray.put(R.id.farmingViewBtn, new FarmingFragment());
-        fragmentSparseArray.put(R.id.storeViewBtn, new StoreFragment());
-        fragmentSparseArray.put(R.id.settingViewBtn, new SettingFragment());
+        // 초기 화면
+        showFragment(farmingFragment);
 
-        // 초기 fragment 설정
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout, fragmentSparseArray.get(R.id.farmingViewBtn)).commit();
-
-        // navigation 바 설정
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            Fragment selectedFragment = fragmentSparseArray.get(item.getItemId());
-            if (selectedFragment != null) {
-                fragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout, selectedFragment)
-                        .commit();
+            int id = item.getItemId();
+
+            if (id == R.id.myPageViewBtn) {
+                showFragment(myPageFragment);
                 return true;
+            } else if (id == R.id.inventoryViewBtn) {
+                showFragment(inventoryFragment);
+                return true;
+            } else if (id == R.id.farmingViewBtn) {
+                showFragment(farmingFragment);
+                return true;
+            } else if (id == R.id.storeViewBtn) {
+                showFragment(storeFragment);
+                return true;
+            } else if (id == R.id.settingViewBtn) {
+                showFragment(settingFragment);
+                return true;
+            } else {
+                return false;
             }
-            return false;
         });
+    }
+
+
+    private void showFragment(Fragment targetFragment) {
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        // 처음 추가하는 Fragment인 경우 add
+        if (!targetFragment.isAdded()) {
+            transaction.add(R.id.relativeLayoutMain, targetFragment);}
+
+        // 기존에 표시된 Fragment는 숨김
+        if (activeFragment != null && activeFragment != targetFragment) {
+            transaction.hide(activeFragment);}
+
+        // 새로운 Fragment는 보여줌
+        transaction.show(targetFragment);
+        transaction.commit();
+
+        // 현재 표시 중인 Fragment 갱신
+        activeFragment = targetFragment;
     }
 }

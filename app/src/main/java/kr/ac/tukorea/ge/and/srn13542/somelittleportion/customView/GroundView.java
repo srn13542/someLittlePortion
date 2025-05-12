@@ -31,7 +31,7 @@ public class GroundView extends View {
     }
     public void init(AttributeSet attrs, int defStyle) {
         //Load attributes
-        mExampleDrawable = getContext().getDrawable(R.drawable.background_night);
+        mExampleDrawable = getContext().getDrawable(R.drawable.ground1);
         if (mExampleDrawable != null) {
             invalidate();
         }
@@ -40,13 +40,28 @@ public class GroundView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        // Draw the exampleDrawable if it exists
-        if (mExampleDrawable != null) {
-            // Set bounds for the drawable
-            mExampleDrawable.setBounds(0, 0, getWidth(), getHeight());
 
-            // Draw the drawable onto the canvas
+        // Padding 값을 가져옴
+        int paddingLeft = getPaddingLeft();
+        int paddingTop = getPaddingTop();
+        int paddingRight = getPaddingRight();
+        int paddingBottom = getPaddingBottom();
+
+        // 실제 그리기 영역을 padding을 고려하여 계산
+        int left = paddingLeft;
+        int top = paddingTop;
+        int right = getWidth() - paddingRight;
+        int bottom = getHeight() - paddingBottom;
+
+        // 존재할 때 그리기
+        if (mExampleDrawable != null) {
+            // 그려질 영역 정의에 사용
+            mExampleDrawable.setBounds(left, top, right, bottom);
             mExampleDrawable.draw(canvas);
+            /*java코드에서 padding 설정 희망 시
+            GroundView groundView = findViewById(R.id.ground_view);
+            groundView.setPadding(20, 20, 20, 20); // 좌, 상, 우, 하 패딩 값 설정
+            이 가능하다고 함 */
         }
     }
 }

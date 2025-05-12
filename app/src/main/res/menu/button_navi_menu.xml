@@ -6,12 +6,14 @@
         android:id="@+id/myPageViewBtn"
         android:enabled="true"
         android:title="@string/myPage"
+        android:icon = "@drawable/menu1_mypage"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/inventoryViewBtn"
         android:enabled="true"
         android:title="@string/inventory"
+        android:icon = "@drawable/menu2_inventory"
         app:showAsAction="always"/>
 
 
@@ -19,6 +21,7 @@
         android:id="@+id/farmingViewBtn"
         android:enabled="true"
         android:title="@string/farming"
+        android:icon= "@drawable/menu3_farm"
         app:showAsAction="always"/>
 
 
@@ -26,12 +29,14 @@
         android:id="@+id/storeViewBtn"
         android:enabled="true"
         android:title="@string/store"
+        android:icon = "@drawable/menu4_store"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/settingViewBtn"
         android:enabled="true"
         android:title="@string/setting"
+        android:icon="@drawable/menu5_setting"
         app:showAsAction="always"/>
 
 </menu>

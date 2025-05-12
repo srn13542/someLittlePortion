@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FarmingFragment">
+    tools:context=".fragment.FarmingFragment"
+    android:background="@drawable/background_night">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+            <!-- 최상단 바 -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/upStatusBar"
+        android:padding="15dp">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profilePicButton"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/profilePicButton"
+            android:src="@drawable/tree1" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TableRow>
+                <TextView
+                    android:id = "@+id/coinTextView"
+                    style="@style/CenteredTextViewStyle"
+                    android:background="@drawable/custom_status_bar"/>
+                <TextView
+                    android:id = "@+id/jewelTextView"
+                    style="@style/CenteredTextViewStyle"
+                    android:background="@drawable/custom_status_bar"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/imsiEmptyThing"
+                    style="@style/CenteredTextViewStyle"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/plusSomeTextView"
+                    style="@style/CenteredTextViewStyle"
+                    android:background="@drawable/custom_status_bar"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below ="@+id/upStatusBar"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/menuThingButton"
+        android:contentDescription="@string/toolDescription"
+        android:background="@drawable/list"
+        android:backgroundTint="@color/menuYellow"
+        android:padding="32dp" />
+    <kr.ac.tukorea.ge.and.srn13542.somelittleportion.customView.GroundView
+        android:id="@+id/ground1"
+        style="@style/groundStyle"
+        android:layout_alignParentEnd="true" />
+    <kr.ac.tukorea.ge.and.srn13542.somelittleportion.customView.GroundView2
+        android:id="@+id/ground2"
+        style="@style/groundStyle"
+        android:layout_alignParentStart="true" />
+    <kr.ac.tukorea.ge.and.srn13542.somelittleportion.customView.GrassCustomView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp" />
+    <kr.ac.tukorea.ge.and.srn13542.somelittleportion.customView.TreeView
+        android:layout_width="180dp"
+        android:layout_height="270dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginStart="40dp"/>
+    <kr.ac.tukorea.ge.and.srn13542.somelittleportion.customView.TreeView
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginStart="30dp" />
+</RelativeLayout>

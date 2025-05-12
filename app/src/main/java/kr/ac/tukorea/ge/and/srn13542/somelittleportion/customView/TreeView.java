@@ -9,7 +9,7 @@ import android.view.View;
 
 import kr.ac.tukorea.ge.and.srn13542.somelittleportion.R;
 
-public class GrassCustomView extends View {
+public class TreeView extends View {
 
     private String mExampleString;
 
@@ -17,21 +17,21 @@ public class GrassCustomView extends View {
 
     private Drawable mExampleDrawable;
 
-    public GrassCustomView(Context context) {
+    public TreeView(Context context) {
         super(context);
         init(null, 0);
     }
-    public GrassCustomView(Context context, AttributeSet attrs) {
+    public TreeView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
-    public GrassCustomView(Context context, AttributeSet attrs, int defStyle) {
+    public TreeView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
     public void init(AttributeSet attrs, int defStyle) {
         //Load attributes
-        mExampleDrawable = getContext().getDrawable(R.drawable.grass1);
+        mExampleDrawable = getContext().getDrawable(R.drawable.tree2);
         if (mExampleDrawable != null) {
             invalidate();
         }
