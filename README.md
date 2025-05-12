@@ -92,11 +92,12 @@
 
 
 
-<div align="center">
+<div align="center"> <br />
   05월 12일 기준 진척 보고
+</div> <br /><br />
+
   | 당초 계획 | 진척 |
   | --------  | ---- |
   | ![쿨그레이 깔끔한 사업계획서 프레젠테이션](https://github.com/user-attachments/assets/b355ded6-11fa-4db4-a604-37b6a2e560c3) | [쿨그레이 깔끔한 사업계획서 프레젠테이션.pdf](https://github.com/user-attachments/files/20160520/default.pdf) |
   | ![쿨그레이 깔끔한 사업계획서 프레젠테이션 (1)](https://github.com/user-attachments/assets/9b37a898-a5f4-4f8d-9d10-daa7f62898ad) |  [쿨그레이 깔끔한 사업계획서 프레젠테이션 (1).pdf](https://github.com/user-attachments/files/20160540/1.pdf) | 
 
-</div>
