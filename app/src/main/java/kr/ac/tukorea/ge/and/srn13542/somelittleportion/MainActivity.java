@@ -1,7 +1,8 @@
 package kr.ac.tukorea.ge.and.srn13542.somelittleportion;
 
 import android.os.Bundle;
-import android.util.Log;
+//import android.util.Log;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private final FragmentManager fragmentManager = getSupportFragmentManager();
     private Fragment activeFragment;
 
-    // Fragment 재사용을 위한 멤버 변수
+    // Fragment 재사용 위한 멤버 변수
     private final Fragment myPageFragment = new MyPageFragment();
     private final Fragment inventoryFragment = new InventoryFragment();
     private final Fragment farmingFragment = new FarmingFragment();
@@ -30,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         // 초기 화면
+        binding.bottomNavigationView.setSelectedItemId(R.id.farmingViewBtn);
         showFragment(farmingFragment);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -64,15 +67,15 @@ public class MainActivity extends AppCompatActivity {
     private void showFragment(Fragment targetFragment) {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        // 처음 추가하는 Fragment인 경우 add
+        // 처음 추가 하는 Fragment add
         if (!targetFragment.isAdded()) {
             transaction.add(R.id.relativeLayoutMain, targetFragment);}
 
-        // 기존에 표시된 Fragment는 숨김
+        // 기존에 표시된 Fragment 숨김
         if (activeFragment != null && activeFragment != targetFragment) {
             transaction.hide(activeFragment);}
 
-        // 새로운 Fragment는 보여줌
+        // 새로운 Fragment 보여줌
         transaction.show(targetFragment);
         transaction.commit();
 
